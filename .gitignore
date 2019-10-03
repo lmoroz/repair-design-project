@@ -1,0 +1,5 @@
+#design sources directory
+src
+
+#node.js modules
+node_modules
