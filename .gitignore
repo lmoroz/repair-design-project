@@ -1,5 +1,9 @@
-#design sources directory
-src
-
-#node.js modules
+/sources/
+/build/
+.idea
+.gitignore
+/node_modules/
 node_modules
+package.json
+package-lock.json
+webpack.config.js
