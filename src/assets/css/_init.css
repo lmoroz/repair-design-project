@@ -1,0 +1,94 @@
+:root {
+    --white: #ffffff;
+    --black: #131313;
+    --black-30: rgba(0, 0, 0, 0.3);
+    --sand: #e3b873;
+    --black-two: #363636;
+    --warm-grey: #959595;
+    --black-three: #181818;
+    --black-75: rgba(0, 0, 0, 0.75);
+    --black-90: rgba(0, 0, 0, 0.9);
+    --black-four: #333333;
+    --greyish-brown: #4d4d4d;
+    --white-two: #e6e6e6;
+    --brownish-grey: #666666;
+    --warm-grey-two: #808080;
+    --greyish: #b3b3b3;
+    --white-15: rgba(255, 255, 255, 0.15);
+    --white-50: rgba(255, 255, 255, 0.5);
+    --black-two-50: rgba(54, 54, 54, 0.5);
+    --black-80: rgba(0, 0, 0, 0.8);
+    --pinkish-grey: #c4c4c4;
+    --black-70: rgba(0, 0, 0, 0.7);
+    --white-0: rgba(252, 252, 252, 0);
+    --black-three-80: rgba(24, 24, 24, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 1440px) {
+    html {
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    html {
+        font-size: 112.5%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    html {
+        font-size: 106.25%;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 710px) {
+    html {
+        font-size: 93.75%;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 639px) {
+    html {
+        font-size: 87.5%;
+    }
+
+
+    nav,
+    .cover__instagram-link,
+    .cover__scroll-down-link,
+
+    .controls,
+
+    .measurement,
+
+    .fantasies__menu,
+
+    .steps,
+
+    .team__description,
+
+    .clients,
+
+    footer {
+        display: none;
+    }
+}
+
+.header-wrapper, .main-wrapper, .footer-wrapper {
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
+}
