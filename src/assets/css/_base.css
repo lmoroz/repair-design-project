@@ -124,7 +124,17 @@
     border-radius: 2px;
 }
 
-label input[type=text] {
+button.call-to-action {
+    border: none;
+}
+
+label {
+    display: block;
+}
+
+label input[type=text],
+label input[type=tel],
+label input[type=email]{
     height: 25px;
     font-family: FuturaC;
     font-size: 0.9rem;
