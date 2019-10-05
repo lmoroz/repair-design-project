@@ -95,6 +95,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    border: none;
 }
 .cover__scroll-down-link:hover {
     color: var(--sand);

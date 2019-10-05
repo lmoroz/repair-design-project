@@ -46,9 +46,11 @@
 .header__tel-link {
     text-decoration: underline;
 }
+.header__call-action {
+    border: 1px solid var(--sand);
+}
 .header__call-action:hover {
     color: var(--sand);
     background-color: transparent;
-    border: 1px solid var(--white)
 }
 
