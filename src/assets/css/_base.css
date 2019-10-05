@@ -1,0 +1,217 @@
+.pager {
+    display: flex;
+    flex-direction: row;
+}
+.pager a {
+    display: block;
+    width: 9.6px;
+    height: 9.6px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.pager a:first-child, .pager a:last-child {
+    width: 42px;
+    background: transparent url("../images/l-arrow.svg") no-repeat center;
+}
+.pager a:last-child {
+    transform: rotateX(180deg);
+    background: transparent url("../images/r-arrow.svg") no-repeat center;
+}
+
+
+.basic-header-sand {
+    font-family: YesevaOne;
+    font-size: 1.35rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--sand);
+}
+
+.section-text-basic {
+    font-family: FuturaBookC;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--black-two);
+}
+
+.basic-description {
+    font-family: FuturaBookC;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.76;
+    letter-spacing: normal;
+    color: var(--black-two);
+}
+
+.basic-header-light {
+    font-family: YesevaOne;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.basic-header-dark {
+    font-family: YesevaOne;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--black-three);
+    text-transform: uppercase;
+}
+
+.placeholder {
+    font-family: FuturaBookC;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--black-two);
+}
+
+.tab-link {
+    font-family: YesevaOne;
+    font-size: 0.7rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--white-30);
+    padding-bottom: 3px;
+}
+
+.tab-link-active {
+    color: var(--sand);
+    border-bottom: 1px solid var(--sand);
+}
+
+.call-to-action {
+    font-family: FuturaDemiC;
+    font-size: 0.65rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: var(--sand);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 2px;
+}
+
+label input[type=text] {
+    height: 25px;
+    font-family: FuturaC;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--black-three-10);
+}
+
+label input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+label:before {
+    display: block;
+    font-family: FuturaBookC;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--black-two-50);
+}
+.form-name:before {
+    content: 'Name'
+}
+.form-phone:before {
+    content: 'Phone'
+}
+.form-email:before {
+    content: 'Email'
+}
+
+.form-agree {
+    font-family: FuturaBookC;
+    font-size: 0.8rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--black-three);
+    display: flex;
+    align-items: center;
+}
+
+.submit {
+    font-family: FuturaDemiC;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.76;
+    letter-spacing: normal;
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.list-text {
+    font-family: FuturaBookC;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--white);
+}
+
+
+
+
+address {
+    font-family: YesevaOne;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--sand);
+}

@@ -1,0 +1,6 @@
+.footer-wrapper {
+    height: 4.15rem;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: row;
+}

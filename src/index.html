@@ -39,7 +39,7 @@
     </section>
 
     <section class="projects" id="projects">
-      <h2 class="projects__header">Completed projects</h2>
+      <h2 class="projects__header basic-header-sand">Completed projects</h2>
       <div class="divider"></div>
       <div class="projects__project-description-text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction
         market we have made happy more than 1000 families
@@ -53,13 +53,14 @@
         <li class="projects__project-props_list-text projects-props__prop-title_time list-text">Repair time: 3.5 months</li>
         <li class="projects__project-props_list-text projects-props__prop-title_cost list-text">Repair Cost: Upon request</li>
       </ul>
-      <ul class="projects__tabs">
-        <li class="projects__tabs__tab-link tab-link-active">Rostov-on-Don, Admiral</li>
-        <li class="projects__tabs__tab-link tab-link">Sochi Thieves</li>
-        <li class="projects__tabs__tab-link tab-link">Rostov-on-Don Patriotic</li>
-      </ul>
+      <div class="projects__tabs">
+        <a class="projects__tabs__tab-link tab-link tab-link-active" href="#">Rostov-on-Don, Admiral</a>
+        <a class="projects__tabs__tab-link tab-link" href="#">Sochi Thieves</a>
+        <a class="projects__tabs__tab-link tab-link" href="#">Rostov-on-Don Patriotic</a>
+      </div>
       <div class="projects__stage projects__slider projects__swiper">
-
+        <img src="assets/images/project-1.png" alt="project 1">
+        <img src="assets/images/project-2.png" alt="project 1">
       </div>
       <div class="projects__controls controls">
         <nav class="pager">
@@ -74,9 +75,7 @@
 
     <section class="online-control">
       <h2 class="online-control__header basic-header-light">Online control</h2>
-      <div class="divider"></div>
-      <iframe src=""></iframe>
-      <div class="divider"></div>
+      <img src="assets/images/video player.png" class="online-control__video"  width="817" height="434" alt="example video">
       <div class="online-control__description basic-description">
         <p>At each facility, a camera is installed that broadcasts the progress of work on the clock.
         <p>At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
@@ -87,11 +86,11 @@
       <label for="contact-form-name" class="contact-form-name form-name">
         <input type="text" id="contact-form-name" placeholder="What is your name:" required></label>
       <label for="contact-form-phone" class="contact-form-phone form-phone">
-        <input type="text" id="contact-form-phone" placeholder="What is your phone number:" required></label>
+        <input type="text" id="contact-form-phone" placeholder="Your phone number:" required></label>
       <label for="contact-form-agree" class="contact-form-agree form-agree">
         <input type="checkbox" id="contact-form-agree" required>
         I agree to the processing of personal data</label>
-      <button type="submit">Submit</button>
+      <button type="submit" class="contact-form-submit submit call-to-action">Submit</button>
     </form>
 
     <section class="types-of-repair">
@@ -109,7 +108,7 @@
               <li>Replacing sockets and switches</li>
               <li>Replacing doors</li>
             </ul>
-            <div class="types-list__list-item_cost">from 900 rub / m2</div>
+            <div class="types-list__list-item_cost call-to-action">from 900 rub / m2</div>
           </div>
         </li>
         <li class="types-of-repair__list_overhaul">
@@ -124,7 +123,7 @@
               <li>Replacing sockets and switches</li>
               <li>Replacing doors</li>
             </ul>
-            <div class="types-list__list-item_cost">from 1800 rub / m2</div>
+            <div class="types-list__list-item_cost call-to-action">from 1800 rub / m2</div>
           </div>
         </li>
         <li class="types-of-repair__list_designer-repair">
@@ -139,7 +138,7 @@
               <li>Replacing sockets and switches</li>
               <li>Replacing doors</li>
             </ul>
-            <div class="types-list__list-item_cost">from 4000 rub / m2</div>
+            <div class="types-list__list-item_cost call-to-action">from 4000 rub / m2</div>
           </div>
         </li>
       </ul>

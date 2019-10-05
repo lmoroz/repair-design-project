@@ -1,0 +1,533 @@
+.cover {
+    background: var(--black) url("../images/cover.png") no-repeat;
+    background-size: cover;
+    background-position: top 0 left 82px;
+    height: 707px;
+    display: grid;
+    grid-template-rows: 27% auto auto auto 20% 9.4%;
+    grid-template-columns: 9% 14.4% 1.3% 15.3% 10% auto;
+    grid-template-areas:
+            ' inst . . . . .'
+            ' inst title title title title .'
+            ' inst decr  decr  decr  . .'
+            ' inst calc . submit . .'
+            ' inst . . . . .'
+            ' scroll . . . . .'
+;
+    position: relative;
+}
+.cover__header {
+    font-family: YesevaOne;
+    font-size: 2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    color: var(--white);
+    grid-area: title;
+    text-transform: uppercase;
+}
+.cover__header strong {
+    color: var(--sand);
+}
+.cover__description {
+    grid-area: decr;
+    font-family: FuturaBookC;
+    font-size: 1.1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--white);
+    margin: 2em 0;
+}
+.cover__call-to-action_calc {
+    grid-area: calc;
+}
+.cover__call-to-action_calc:hover {
+    color: var(--sand);
+    border: 1px solid var(--sand);
+    background-color: transparent;
+}
+.cover__call-to-action_submit {
+    grid-area: submit;
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+.cover__call-to-action_submit:hover {
+    color: var(--sand);
+    border: 1px solid var(--sand);
+}
+.cover__instagram-link {
+    grid-area: inst;
+    width: 707px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: FuturaDemiC;
+    font-size: 0.7rem;
+    text-align: center;
+    color: var(--sand);
+    text-decoration: none;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    text-transform: uppercase;
+    height: 83px;
+}
+.cover__instagram-link:hover {
+
+}
+.cover__scroll-down-link {
+    grid-area: scroll;
+    cursor: pointer;
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--white);
+    padding: 25px 75px 25px 25px;
+    background: var(--black) url("../images/scrolldown-button.svg") no-repeat;
+    background-position: center right 25px;
+    border: none;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.cover__scroll-down-link:hover {
+    color: var(--sand);
+}
+
+
+
+.projects {
+    background: var(--black) url("../images/background-top-full.svg") no-repeat center;
+    background-position: center bottom -200px;
+    display: grid;
+    grid-template-columns: 40% 2% 48%;
+    grid-template-rows: auto auto auto auto auto 300px;
+    grid-template-areas:
+        '. . tabs'
+        'header . stage'
+        'descr . stage'
+        'props . stage'
+        'controls . stage'
+        '. . .'
+;
+    padding: 70px 0 100px 83px;
+}
+.projects__header {
+    grid-area: header;
+}
+.projects__project-description-text {
+    grid-area: descr;
+    font-family: FuturaBookC;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    color: var(--white);
+    margin: 35px 0;
+}
+.projects__project-props {
+    grid-area: props;
+    margin: 35px 0;
+}
+.projects__tabs {
+    grid-area: tabs;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.projects__tabs a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.projects__tabs a:hover {
+    color: var(--sand);
+}
+.projects__slider {
+    grid-area: stage;
+    height: 482px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.projects__controls {
+    grid-area: controls;
+    margin: 100px 0 0 0;
+}
+
+.projects-project-props__prop-title {
+    font-family: YesevaOne;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--sand);
+}
+
+
+
+
+
+
+
+
+.online-control {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    margin-top: -320px;
+}
+.online-control__header {
+    background: url("../images/camera.svg") no-repeat center bottom;
+    padding-bottom: 35px;
+    margin-bottom: 10px;
+}
+.online-control__video {
+    margin: 10px auto 25px;
+}
+.online-control__description {
+    text-align: center;
+    margin: 50px 25%;
+}
+
+
+
+.contact-form {
+    display: grid;
+    grid-template-areas:
+        'name phone submit'
+        '. agree .'
+;
+    margin: 50px 25%;
+}
+.contact-form>*{
+    align-self: end;
+}
+ .contact-form-name {
+    grid-area: name;
+}
+.contact-form-phone {
+    grid-area: phone;
+}
+.contact-form-submit {
+    grid-area: submit;
+    border: none;
+    border-radius: 2px;
+    padding: 8px 55px;
+}
+.contact-form-agree {
+    grid-area: agree;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+.types-of-repair {
+    text-align: center;
+    margin: 0 10%;
+}
+.types-of-repair__header {
+    background: url("../images/tools.svg") no-repeat center bottom;
+    padding-bottom: 35px;
+    margin-bottom: 50px;
+}
+.types-of-repair__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.types-of-repair__list>li {
+    list-style-type: none;
+    padding: 300px 25px 0;
+    width: 392px;
+}
+.types-list__list-item {
+    text-align: left;
+    list-style-position: inside;
+    background-color: var(--white);
+    padding: 27px;
+    position: relative;
+}
+.types-list__list-item ul li {
+    list-style-type: disc;
+}
+.types-of-repair__list_redecorating {
+    background: url("../images/redecorating.png") no-repeat top center;
+}
+.types-of-repair__list_overhaul {
+    background: url("../images/overhaul.png") no-repeat top center;
+}
+.types-of-repair__list_designer-repair {
+    background: url("../images/designer-repair.png") no-repeat top center;
+}
+
+.types-list__list-item_header {
+    font-family: YesevaOne;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--black-two);
+    margin-bottom: 10px;
+}
+
+.types-list__list-item ul li {
+    font-family: FuturaBookC;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.76;
+    letter-spacing: normal;
+    color: var(--warm-grey);
+}
+.types-list__list-item_cost {
+    font-family: YesevaOne;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--white);
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+.measurement {
+
+}
+
+.measurement__request-from_header {
+    font-family: FuturaDemiC;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    color: var(--white);
+}
+.measurement__piggy-bank {
+    font-family: FuturaDemiC;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    color: var(--sand);
+}
+
+
+
+
+.fantasies {
+
+}
+.fantasies__menu {
+
+}
+.fantasies__list-item {
+    font-family: "Proxima Nova";
+    font-size: 1rem;
+    line-height: 34px;
+    color: var(--white);
+}
+.fantasies__list-item_active {
+    font-family: "Proxima Nova";
+    font-size: 1rem;
+    line-height: 34px;
+    color: var(--sand);
+}
+.fantasies__demo {
+
+}
+
+
+
+
+.design-project {
+
+}
+.design-project__list {
+
+}
+.design-project__list>li {
+
+}
+.types-list__list-item-description {
+
+}
+
+
+
+.steps {
+
+}
+
+.steps {
+    background: var(--black);
+}
+
+.steps__step-content {
+    font-family: FuturaBookC;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.76;
+    letter-spacing: normal;
+    color: var(--white);
+}
+.steps__list-item-tab-text {
+    font-family: FuturaBookC;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    color: var(--white);
+}
+.steps__header-second {
+    font-family: FuturaDemiC;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--white);
+}
+
+.steps__step-title {
+    font-family: YesevaOne;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.52;
+    letter-spacing: normal;
+    color: var(--sand);
+}
+
+
+
+
+
+.team__description-top {
+    font-family: FuturaBookC;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--white);
+}
+.team__team-member-position {
+    font-family: FuturaBookC;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.52;
+    letter-spacing: normal;
+    color: var(--warm-grey);
+}
+.team__team-member-name {
+    font-family: YesevaOne;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--black-three);
+}
+.team__team-member-exp {
+    font-family: YesevaOne;
+    font-size: 0.65rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.52;
+    letter-spacing: normal;
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+.clients__client-card {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+.clients__client-name {
+    font-family: YesevaOne;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: var(--black-three);
+}
+.clients__client-text {
+    font-family: FuturaBookC;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    color: var(--warm-grey);
+}
+
+.clients__project-prop-text {
+    font-family: YesevaOne;
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--white);
+}
+. clients__project-prop-text_area {
+
+}
+
+. clients__project-prop-text_time {
+
+}

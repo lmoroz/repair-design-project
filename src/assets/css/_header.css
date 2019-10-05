@@ -1,0 +1,54 @@
+
+.header-wrapper {
+    height: 4.15rem;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 82px;
+}
+
+.nav-bar__link {
+    font-family: FuturaBookC;
+    font-size: 0.7rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.nab-nar__link_active {
+    color: var(--sand);
+}
+.nav-bar__link:hover{
+    color: var(--sand);
+    font-weight: bold;
+    text-decoration: underline;
+}
+.logo-link {
+    font-family: FuturaDemiC;
+    font-size: 0.7rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--sand);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header__tel-link {
+    text-decoration: underline;
+}
+.header__call-action:hover {
+    color: var(--sand);
+    background-color: transparent;
+    border: 1px solid var(--white)
+}
+
