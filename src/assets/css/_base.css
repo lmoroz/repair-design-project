@@ -78,17 +78,6 @@
     text-transform: uppercase;
 }
 
-.placeholder {
-    font-family: FuturaBookC;
-    font-size: 0.9rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.41;
-    letter-spacing: normal;
-    color: var(--black-two);
-}
-
 .tab-link {
     font-family: YesevaOne;
     font-size: 0.7rem;
@@ -130,6 +119,7 @@ button.call-to-action {
 
 label {
     display: block;
+    cursor: pointer;
 }
 
 label input[type=text],
@@ -147,14 +137,61 @@ label input[type=email]{
     border: none;
     border-bottom: 1px solid var(--black-three-10);
 }
-
-label input[type=checkbox] {
-    width: 18px;
-    height: 18px;
-    margin-right: 5px;
+input[type=text]::placeholder,
+input[type=tel]::placeholder,
+input[type=email]::placeholder {
+    font-family: FuturaBookC;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--black-two);
 }
 
-label:before {
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox] + span {
+    display: flex;
+    position: relative;
+}
+input[type=checkbox] + span::before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--sand);
+    background-color: transparent;
+}
+input[type=checkbox] + span::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    border-left: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+    height: 3px;
+    width: 8px;
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+input[type="checkbox"]:checked + span::after {
+    opacity: 1;
+}
+input[type="checkbox"]:checked + span::before {
+    background-color: var(--sand);
+}
+input[type="checkbox"]:focus + span::before {
+    outline: #5d9dd5 solid 1px;
+    box-shadow: 0 0 8px #5e9ed6;
+}
+
+
+label:not(.form-agree):before {
     display: block;
     font-family: FuturaBookC;
     font-size: 0.75rem;

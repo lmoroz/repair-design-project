@@ -198,6 +198,7 @@
 }
 .online-control__video {
     margin: 10px auto 25px;
+    border: none;
 }
 .online-control__description {
     text-align: center;
