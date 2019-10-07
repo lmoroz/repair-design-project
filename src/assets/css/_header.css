@@ -20,15 +20,17 @@
     color: var(--white);
     text-transform: uppercase;
     text-decoration: none;
-    margin: 0 10px;
+    padding: 15px 20px;
+    border-radius: 2px;
+    display: inline-block;
 }
 .nab-nar__link_active {
     color: var(--sand);
 }
 .nav-bar__link:hover{
-    color: var(--sand);
+    background-color: var(--sand);
+    color: var(--white);
     font-weight: bold;
-    text-decoration: underline;
 }
 .logo-link {
     font-family: FuturaDemiC;
@@ -44,7 +46,14 @@
 }
 
 .header__tel-link {
+    padding: 15px 20px;
+    border-radius: 2px;
     text-decoration: underline;
+}
+.header__tel-link:hover {
+    background-color: var(--sand);
+    color: var(--white);
+    font-weight: bold;
 }
 .header__call-action {
     border: 1px solid var(--sand);
