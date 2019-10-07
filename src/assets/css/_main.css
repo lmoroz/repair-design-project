@@ -258,6 +258,7 @@
     list-style-type: none;
     padding: 300px 25px 0;
     width: 392px;
+    margin: 0 15px;
 }
 .types-list__list-item {
     text-align: left;
