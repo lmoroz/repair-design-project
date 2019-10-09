@@ -1,0 +1,84 @@
+
+.instagram-interactive-wrapper {
+    height: 35.35rem;
+    width: 4.15rem;
+    background: transparent url("../images/bg-instagram.svg") no-repeat;
+    background-size: 0;
+    background-position: center top 30px;
+    transition: width 1s ease, height 1s ease, margin-left  1s ease, background-size 5s ease, background-color 0.5s ease;
+    will-change: width, height, margin-left, background-size, background-color;
+    cursor: pointer;
+
+    position: absolute;
+    top: 4.15rem;
+    z-index: 100;
+}
+.instagram-interactive-wrapper:hover {
+    width: 100%;
+    transform: rotate(0deg);
+    margin-left: 0;
+    background-size: contain;
+    background-color: var(--black-75);
+}
+
+.instagram-interactive__link {
+    font-family: FuturaDemiC;
+    font-size: 0.7rem;
+    text-align: center;
+    color: var(--sand);
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    width: 35.35rem;
+    height: 4.15rem;
+
+    transform-origin: top left;
+    margin-left: 4.15rem;
+    white-space: nowrap;
+    transform: rotate(90deg);
+
+    transition: transform 1s ease, width 1s ease, height 1s ease, margin-left  1s ease;
+    will-change: transform, width, height, margin-left;
+}
+.instagram-interactive-wrapper:hover .instagram-interactive__link {
+    width: 100%;
+    height: 4.15rem;
+    transform: rotate(0deg);
+    margin-left: 0;
+}
+.instagram-interactive__link .line {
+    display: block;
+    height: 1px;
+    width: 52px;
+    background: var(--sand);
+    margin-left: 10px;
+}
+.scroll-down-interactive {
+    cursor: pointer;
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--white);
+    padding: 25px 75px 25px 55px;
+    background: var(--black) url("../images/scrolldown-button.svg") no-repeat;
+    background-position: center right 25px;
+    white-space: nowrap;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-top: calc(4.15rem + 35.35rem);
+    transform: translateY(-50%);
+    border: none;
+    z-index: 100;
+}
+.scroll-down-interactive:hover {
+    color: var(--sand);
+}
+
