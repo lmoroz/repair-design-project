@@ -1,19 +1,21 @@
+main {
+    background: var(--black) url(../images/cover.png) no-repeat 4.15rem top;
+    background-size: calc(100% - 4.15rem);
+}
+
 .cover {
-    background: var(--black) url("../images/cover.png") no-repeat;
-    background-size: cover;
-    background-position: top 0 left 82px;
-    height: 707px;
+    height: 35.35rem;
     display: grid;
     grid-template-columns: 83px 2% 14.4% 15.3% 4% auto;
     grid-template-rows: 26% auto auto 1% auto 20% 9.4%;
     grid-template-areas:
-            ' inst inst inst inst inst inst'
+            ' . . . . . .'
             ' . . title title title .'
             ' . . decr  decr  . .'
             ' . . . . . .'
             ' . . calc submit . .'
             ' . . . . . .'
-            ' scroll . . . . .';
+            ' . . . . . .';
     grid-gap: 1%;
     position: relative;
 }
@@ -61,23 +63,25 @@
     border: 1px solid var(--sand);
 }
 .cover__instagram-wrapper {
-    grid-area: inst;
-    height: 707px;
-    width: 83px;
-    text-transform: uppercase;
-    background: var(--black-75) url("../images/bg-instagram.svg") no-repeat;
+    height: 35.35rem;
+    width: 4.15rem;
+    background: transparent url("../images/bg-instagram.svg") no-repeat;
     background-size: 0;
     background-position: center top 30px;
-    transition: width 1s ease, height 1s ease, margin-left  1s ease, background-size 5s ease;
-    will-change: width, height, margin-left, background-size;
+    transition: width 1s ease, height 1s ease, margin-left  1s ease, background-size 5s ease, background-color 0.5s ease;
+    will-change: width, height, margin-left, background-size, background-color;
     cursor: pointer;
+
+    position: absolute;
+    top: 4.15rem;
+    z-index: 100;
 }
 .cover__instagram-wrapper:hover {
     width: 100%;
-    height: 707px;
     transform: rotate(0deg);
     margin-left: 0;
     background-size: contain;
+    background-color: var(--black-75);
 }
 
 .cover__instagram-link {
@@ -86,14 +90,17 @@
     text-align: center;
     color: var(--sand);
     text-decoration: none;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 707px;
-    height: 83px;
+    text-transform: uppercase;
+
+    width: 35.35rem;
+    height: 4.15rem;
 
     transform-origin: top left;
-    margin-left: 83px;
+    margin-left: 4.15rem;
     white-space: nowrap;
     transform: rotate(90deg);
 
@@ -102,7 +109,7 @@
 }
 .cover__instagram-wrapper:hover .cover__instagram-link {
     width: 100%;
-    height: 83px;
+    height: 4.15rem;
     transform: rotate(0deg);
     margin-left: 0;
 }
@@ -114,7 +121,6 @@
     margin-left: 10px;
 }
 .cover__scroll-down-link {
-    grid-area: scroll;
     cursor: pointer;
     font-family: "Yeseva One";
     font-style: normal;
@@ -126,8 +132,11 @@
     background: var(--black) url("../images/scrolldown-button.svg") no-repeat;
     background-position: center right 25px;
     white-space: nowrap;
+
     position: fixed;
-    margin-top: 707px;
+    left: 0;
+    top: 0;
+    margin-top: calc(4.15rem + 35.35rem);
     transform: translateY(-50%);
     border: none;
     z-index: 100;
@@ -152,7 +161,7 @@
         'controls . stage'
         '. . .'
 ;
-    padding: 70px 0 100px 83px;
+    padding: 70px 0 100px 4.15rem;
 }
 .projects__header {
     grid-area: header;

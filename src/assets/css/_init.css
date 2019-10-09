@@ -33,11 +33,6 @@
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 1440px) {
-    html {
-        font-size: 125%;
-    }
-}
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
     html {
@@ -72,21 +67,25 @@
     nav,
     .cover__instagram-link,
     .cover__scroll-down-link,
-
     .controls,
-
     .measurement,
-
     .fantasies__menu,
-
     .steps,
-
     .team__description,
-
     .clients,
-
     footer {
         display: none;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    html {
+        font-size: 125%;
+    }
+
+    main {
+        background-position-x: 82px;
     }
 }
 
@@ -94,4 +93,24 @@
     max-width: 1440px;
     position: relative;
     margin: 0 auto;
+}
+
+.projects,
+.online-control,
+.contact-form,
+.types-of-repair,
+.measurement,
+.fantasies,
+.design-project,
+.steps,
+.team,
+.clients,
+.question-form,
+.contacts,
+footer {
+    display: none!important;
+}
+
+body {
+    height: 10150px;
 }
