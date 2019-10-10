@@ -13,6 +13,9 @@ header {
             ' . logo . menu . tel . button . '
             ' . . . . . . . . . ';
 }
+
+
+
 .header-wrapper>* {
     display: flex;
     justify-content: center;
@@ -23,7 +26,7 @@ header {
     display: flex;
     flex-direction: row;
 
-    margin: 0 -15px;
+    margin: 0 -0.75rem;
 }
 .nav-bar__link {
     font-family: FuturaBookC;
@@ -47,7 +50,7 @@ header {
 
     border-radius: 2px;
 
-    padding: 0 15px;
+    padding: 0 0.75rem;
 }
 .nab-nar__link_active {
     color: var(--sand);
@@ -73,16 +76,17 @@ header {
 
 .header__tel-link {
     grid-area: tel;
-    padding: 0 20px;
     border-radius: 2px;
     text-decoration: underline;
-    margin: 0 -20px;
+    /*margin: 0 -1rem;*/
 }
 .header__tel-link:hover {
     background-color: var(--sand);
     color: var(--white);
     font-weight: bold;
 }
+
+
 .header__call-action {
     grid-area: button;
     border: 1px solid var(--sand);
@@ -92,3 +96,65 @@ header {
     background-color: transparent;
 }
 
+
+
+
+@media screen and (max-width: 840px) {
+
+    .header-wrapper {
+        grid-template-columns: 5.7% 12.5% 6.6% 1fr 4% auto 4% 11.2% 1%;
+    }
+    .nav-bar {
+        margin: 0 -0.3rem;
+    }
+    .nav-bar__link {
+        padding: 0 0.3rem;
+        flex: 0;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .nav-bar {
+        margin: 0 -0.25rem;
+    }
+    .nav-bar__link {
+        padding: 0 0.25rem;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .nav-bar {
+        display: none;
+    }
+    .header-wrapper {
+        grid-template-columns: 5.7% auto 1% auto 1% auto 1%;
+        grid-template-areas:
+                ' . . . . . . . '
+                ' . logo . tel . button . '
+                ' . . . . . . . ';
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .header__call-action {
+        display: none;
+    }
+    .header-wrapper {
+        grid-template-columns: 1% auto 1% auto 1%;
+        grid-template-areas:
+                ' . . . . . '
+                ' . logo . tel .  '
+                ' . . . . . '  ;
+    }
+
+    .logo-link {
+        font-size: 1rem;
+    }
+    .header__tel-link {
+        text-decoration: none;
+        color: var(--white);
+    }
+}

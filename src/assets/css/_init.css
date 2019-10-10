@@ -58,15 +58,13 @@
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 639px) {
+@media screen and (max-width: 639px) {
     html {
         font-size: 87.5%;
     }
 
 
     nav,
-    .cover__instagram-link,
-    .cover__scroll-down-link,
     .controls,
     .measurement,
     .fantasies__menu,
@@ -77,6 +75,17 @@
         display: none;
     }
 }
+
+
+@media screen and (max-width: 540px) {
+    html {
+        font-size: 75%;
+    }
+}
+@media screen and (max-width: 375px) {
+
+}
+
 
 
 @media screen and (min-width: 1440px) {
@@ -95,6 +104,7 @@
     margin: 0 auto;
 }
 
+/* ----------------------------------------- DEBUG styles ----------------------------------------------------------- */
 .projects,
 .online-control,
 .contact-form,
