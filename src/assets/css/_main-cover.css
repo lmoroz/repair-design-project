@@ -1,4 +1,7 @@
 .cover {
+    background: var(--black) url(../images/cover.png) 4.15rem top no-repeat;
+    background-size: cover;
+
     height: 35.35rem;
     display: grid;
     grid-template-columns: 9.9% 15.3% 1.5% 15.3% 17.8% auto;
@@ -12,6 +15,12 @@
             ' . calc . submit . .'
             ' . . . . . .';
     position: relative;
+}
+@media screen and (max-width: 375px) {
+    .cover {
+        background: var(--black) url(../images/cover-small.png) no-repeat;
+        background-position: top center;
+    }
 }
 
 

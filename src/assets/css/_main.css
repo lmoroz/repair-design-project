@@ -1,13 +1,7 @@
 main {
-    background: var(--black) url(../images/cover.png) 4.15rem top no-repeat;
-    background-size: cover;
 }
 
 @media screen and (max-width: 375px) {
-    main {
-        background: var(--black) url(../images/cover-small.png) no-repeat;
-        background-position: top center;
-    }
     .instagram-interactive-wrapper,
     .scroll-down-interactive {
         display: none;
