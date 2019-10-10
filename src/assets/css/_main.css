@@ -1,67 +1,19 @@
 main {
-    background: var(--black) url(../images/cover.png) no-repeat 4.15rem top;
-    background-size: calc(100% - 4.15rem);
+    background: var(--black) url(../images/cover.png) 4.15rem top no-repeat;
+    background-size: cover;
 }
 
-.cover {
-    height: 35.35rem;
-    display: grid;
-    grid-template-columns: 83px 2% 14.4% 15.3% 4% auto;
-    grid-template-rows: 26% auto auto 1% auto 20% 9.4%;
-    grid-template-areas:
-            ' . . . . . .'
-            ' . . title title title .'
-            ' . . decr  decr  . .'
-            ' . . . . . .'
-            ' . . calc submit . .'
-            ' . . . . . .'
-            ' . . . . . .';
-    grid-gap: 1%;
-    position: relative;
+@media screen and (max-width: 375px) {
+    main {
+        background: var(--black) url(../images/cover-small.png) no-repeat;
+        background-position: top center;
+    }
+    .instagram-interactive-wrapper,
+    .scroll-down-interactive {
+        display: none;
+    }
 }
-.cover__header {
-    font-family: YesevaOne;
-    font-size: 2rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.35;
-    letter-spacing: normal;
-    color: var(--white);
-    grid-area: title;
-    text-transform: uppercase;
-}
-.cover__header strong {
-    color: var(--sand);
-}
-.cover__description {
-    grid-area: decr;
-    font-family: FuturaBookC;
-    font-size: 1.1rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.41;
-    letter-spacing: normal;
-    color: var(--white);
-}
-.cover__call-to-action_calc {
-    grid-area: calc;
-}
-.cover__call-to-action_calc:hover {
-    color: var(--sand);
-    border: 1px solid var(--sand);
-    background-color: transparent;
-}
-.cover__call-to-action_submit {
-    grid-area: submit;
-    background-color: transparent;
-    border: 1px solid var(--white);
-}
-.cover__call-to-action_submit:hover {
-    color: var(--sand);
-    border: 1px solid var(--sand);
-}
+
 
 .projects {
     background: var(--black) url("../images/bg-lines-1-wide.svg") no-repeat center;

@@ -1,0 +1,124 @@
+.cover {
+    height: 35.35rem;
+    display: grid;
+    grid-template-columns: 9.9% 15.3% 1.5% 15.3% 17.8% auto;
+    grid-template-rows: 27.4% 14.9% 2.7% 12.6% 5.8% 7.2% 29.4%;
+    grid-template-areas:
+            ' . . . . . .'
+            ' . title title title title .'
+            ' . . . . . .'
+            ' . decr decr decr  . .'
+            ' . . . . . .'
+            ' . calc . submit . .'
+            ' . . . . . .';
+    position: relative;
+}
+
+
+
+
+.cover__header {
+    font-family: YesevaOne;
+    font-size: 2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    color: var(--white);
+    grid-area: title;
+    text-transform: uppercase;
+}
+
+.cover__header strong {
+    color: var(--sand);
+}
+.cover__description {
+    grid-area: decr;
+    font-family: FuturaBookC;
+    font-size: 1.1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--white);
+}
+.cover__call-to-action_calc {
+    grid-area: calc;
+}
+.cover__call-to-action_calc:hover {
+    color: var(--sand);
+    border: 1px solid var(--sand);
+    background-color: transparent;
+}
+.cover__call-to-action_submit {
+    grid-area: submit;
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+.cover__call-to-action_submit:hover {
+    color: var(--sand);
+    border: 1px solid var(--sand);
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .cover {
+        grid-template-columns: 12% 20% 1.5% 20% 25% auto;
+        grid-template-areas:
+                ' . . . . . .'
+                ' . title title title title .'
+                ' . . . . . .'
+                ' . decr decr decr decr .'
+                ' . . . . . .'
+                ' . calc . submit . .'
+                ' . . . . . .';
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .cover {
+        grid-template-columns: 12% 25% 1.5% 25% auto 9.9%;
+    }
+}
+
+
+
+@media screen and (max-width: 640px) {
+    .cover {
+        grid-template-columns: 20% 30% 1.5% 30% auto 1%;
+    }
+    .cover__header {
+        font-size: 1.5rem;
+    }
+    .cover__description {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .cover {
+        grid-template-columns: 4% 80% auto 4%;
+        grid-template-rows: 20% 15% 3% 22% 9% 9% 4% 9% auto;
+        grid-template-areas:
+                ' . . . .'
+                ' . title title .'
+                ' . . . .'
+                ' . decr . . '
+                ' . . . .'
+                ' . calc calc .'
+                ' . . . .'
+                ' . submit submit .';
+                ' . . . .';
+    }
+    .cover__header {
+        font-size: 1.91666667em;
+    }
+    .cover__description {
+        font-size: 1.5rem;
+    }
+}
