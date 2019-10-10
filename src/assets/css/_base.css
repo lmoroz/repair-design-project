@@ -11,18 +11,25 @@ button, a {
     display: block;
     width: 9.6px;
     height: 9.6px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
+    border: 1px solid var(--white);
     border-radius: 50%;
     text-decoration: none;
     margin: 0 10px;
+    transition: transform 0.1s ease, background-color 0.1s ease;
 }
 .pager a:first-child, .pager a:last-child {
     width: 42px;
     background: transparent url("../images/l-arrow.svg") no-repeat center;
+    border: none;
 }
 .pager a:last-child {
     transform: rotateX(180deg);
     background: transparent url("../images/r-arrow.svg") no-repeat center;
+}
+.pager a:hover {
+    transform: scale(1.8);
+    background-color: transparent;
 }
 
 
