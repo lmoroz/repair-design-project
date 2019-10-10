@@ -1,0 +1,198 @@
+
+.projects {
+    background: var(--black) url("../images/bg-lines-1-wide.svg") no-repeat center;
+    background-position: center bottom -10rem;
+    display: grid;
+    grid-template-columns: 36% 2% 62%;
+    grid-template-rows: auto auto auto auto auto 15rem;
+    grid-template-areas:
+            '. . tabs'
+            'header . stagetop1'
+            'descr . stagetop2'
+            'props . stagemiddle'
+            'controls . stagebottom'
+            '. . .'
+;
+    padding: 5rem 0 5rem 4.15rem;
+}
+.projects__header {
+    grid-area: header;
+    display: flex;
+    text-transform: uppercase;
+}
+.projects__header .line {
+    display: inline-block;
+    height: 1px;
+    width: 92px;
+    background: var(--sand);
+    margin-left: 0;
+    margin: 3rem 0 0 0.5rem;
+}
+.projects__project-description-text {
+    grid-area: descr;
+    font-family: FuturaBookC;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    color: var(--white);
+    margin: 1.5rem 0;
+}
+.projects__project-props {
+    grid-area: props;
+    margin: 0.15rem 0 0 0;
+    columns: 2;
+    list-style-type: none;
+}
+.projects__project-props_list-item {
+    margin-bottom: 2.5rem;
+}
+.projects-props__prop-title::before {
+    font-family: YesevaOne;
+    font-size: 0.95rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--sand);
+    display: block;
+}
+.projects-props__prop-title_city::before {
+    content: 'City:'
+}
+.projects-props__prop-title_time::before {
+    content: 'Repair time:'
+}
+.projects-props__prop-title_area::before {
+    content: 'Apartment area:'
+}
+.projects-props__prop-title_cost::before {
+    content: 'Repair Cost:'
+}
+
+
+
+.projects__tabs {
+    grid-area: tabs;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 8rem 2rem 0;
+}
+.projects__tabs a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.projects__tabs a:hover {
+    color: var(--sand);
+}
+.projects__slider {
+    grid-row-start: stagetop1;
+    grid-row-end: stagebottom;
+    grid-column: stagetop1 / stagebottom;
+    height: 24.1rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.projects__slider>* {
+    margin: 0 0.2rem 0 0;
+}
+
+.projects__slider-handlers {
+    grid-area: stagemiddle;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0.5rem;
+}
+
+.projects__slider-handler {
+    width: 4.25rem;
+    height: 4.25rem;
+    background: transparent url("../images/slide-handler-button.svg") center no-repeat;
+    cursor: pointer;
+    transition: background 0.1s ease;
+}
+.projects__slider-handler_right {
+}
+.projects__slider-handler_left {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+.projects__slider-handler:hover {
+    background: transparent url("../images/slide-handler-button-hover.svg") center no-repeat;
+}
+
+.projects__controls {
+    grid-area: controls;
+    margin: 0.5rem 0 0 0;
+}
+
+.projects-project-props__prop-title {
+    font-family: YesevaOne;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--sand);
+}
+
+@media screen and (max-width: 767px) {
+
+    .projects {
+        background: var(--black);
+
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+                'header'
+                'descr'
+                'stagetop1'
+                'stagemiddle'
+                'stagebottom'
+                'props'
+    ;
+        padding: 3.5rem 1.5rem;
+    }
+    .projects__header {
+        text-align: center;
+        display: block
+    }
+    .projects__header .line {
+        display: none;
+    }
+    .projects__project-description-text {
+        text-align: center;
+        padding: 0 5rem;
+    }
+    .projects__slider img {
+        width: 100%;
+    }
+    .projects__project-props {
+        margin: 2.5rem 2.5rem 0 2.5rem;
+    }
+    .projects__slider-handlers {
+        grid-area: stagemiddle;
+    }
+    .projects__slider-handler_left {
+        opacity: 1;
+    }
+    .projects__tabs,
+    .projects__controls{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .projects__slider-handler {
+        width: 5rem;
+        height: 5rem;
+        background-size: cover;
+    }
+}
