@@ -21,6 +21,7 @@ button, a {
 }
 .pager a:first-child, .pager a:last-child {
     width: 42px;
+    height: 1rem;
     background: transparent url("../images/l-arrow.svg") no-repeat center;
     border: none;
 }
