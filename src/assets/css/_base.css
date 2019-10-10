@@ -6,6 +6,7 @@ button, a {
 .pager {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .pager a {
     display: block;
