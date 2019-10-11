@@ -19,33 +19,6 @@ main {
 
 
 
-.contact-form {
-    display: grid;
-    grid-template-areas:
-        'name phone submit'
-        '. agree .'
-;
-    margin: 50px 25%;
-}
-.contact-form>*{
-    align-self: end;
-}
- .contact-form-name {
-    grid-area: name;
-}
-.contact-form-phone {
-    grid-area: phone;
-}
-.contact-form-submit {
-    grid-area: submit;
-    border-radius: 2px;
-    padding: 8px 55px;
-}
-.contact-form-agree {
-    grid-area: agree;
-    margin-top: 20px;
-}
-
 
 
 

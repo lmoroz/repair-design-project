@@ -99,15 +99,12 @@
 }
 
 .header-wrapper, .main-wrapper, .footer-wrapper {
-    max-width: 1440px;
     position: relative;
-    margin: 0 auto;
 }
 
 /* ----------------------------------------- DEBUG styles ----------------------------------------------------------- */
 
 
-.contact-form,
 .types-of-repair,
 .measurement,
 .fantasies,

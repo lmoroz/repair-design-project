@@ -1,0 +1,86 @@
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 10rem;
+    grid-template-rows: repeat(2, 2.55rem);
+    grid-template-areas:
+            'name phone submit'
+            'agree agree agree';
+    margin: 1.5rem 20%;
+}
+
+.contact-form > * {
+    align-self: end;
+}
+
+.contact-form-name {
+    grid-area: name;
+}
+
+.contact-form-phone {
+    grid-area: phone;
+}
+
+.contact-form-submit {
+    grid-area: submit;
+    border-radius: 2px;
+    height: 100%;
+}
+
+.contact-form-agree {
+    grid-area: agree;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-form {
+        margin: 1.5rem 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        margin: 1.5rem 15%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contact-form {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr) 4rem;
+        grid-template-areas: 'name' 'phone' 'agree' 'submit';
+        grid-gap: 1rem;
+        background: var(--black);
+        padding: 1.5rem 5%;
+        margin: 0;
+    }
+
+    .contact-form label:before {
+        color: var(--white-50);
+        font-size: 1.2rem;
+    }
+    .contact-form input {
+        background: transparent;
+        font-size: 1.3rem;
+        width: 100%;
+    }
+    .contact-form input[type=text]::placeholder,
+    .contact-form input[type=tel]::placeholder,
+    .contact-form input[type=email]::placeholder{
+        font-size: 1.3rem;
+        color: var(--white);
+        border-bottom: 1px solid var(--white-50);
+    }
+
+    .contact-form-agree {
+        color: var(--white);
+        font-size: 1.3rem;
+        margin: 1rem 0 0;
+    }
+    .contact-form-submit {
+        font-size: 1.3rem;
+        margin-bottom: -3.4rem;
+    }
+}
