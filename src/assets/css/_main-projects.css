@@ -142,7 +142,7 @@
     color: var(--sand);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     .projects {
         background: var(--black);
@@ -157,7 +157,7 @@
                 'stagebottom'
                 'props'
     ;
-        padding: 3.5rem 1.5rem;
+        padding: 3.5rem 1.5rem 4.5rem;
     }
     .projects__header {
         text-align: center;
@@ -176,6 +176,11 @@
     .projects__project-props {
         margin: 2.5rem 2.5rem 0 2.5rem;
     }
+    .projects__slider-handler {
+        width: 5rem;
+        height: 5rem;
+        background-size: cover;
+    }
     .projects__slider-handlers {
         grid-area: stagemiddle;
     }
@@ -188,11 +193,16 @@
     }
 }
 
-@media screen and (max-width: 767px) {
 
-    .projects__slider-handler {
-        width: 5rem;
-        height: 5rem;
-        background-size: cover;
+@media screen and (max-width: 425px) {
+
+    .projects {
+        padding: 3.5rem 1.5rem 1.5rem;
+    }
+    .projects__project-props {
+        margin: 1.5rem 2.5rem 0 1.5rem;
+    }
+    .projects__slider {
+        height: auto;
     }
 }

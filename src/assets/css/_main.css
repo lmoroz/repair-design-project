@@ -16,28 +16,6 @@ main {
 
 
 
-.online-control {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    justify-items: center;
-    position: relative;
-    margin-top: -320px;
-}
-.online-control__header {
-    background: url("../images/camera.svg") no-repeat center bottom;
-    padding-bottom: 35px;
-    margin-bottom: 10px;
-}
-.online-control__video {
-    margin: 10px auto 25px;
-    border: none;
-}
-.online-control__description {
-    text-align: center;
-    margin: 50px 25%;
-}
 
 
 
