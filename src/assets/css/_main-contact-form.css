@@ -1,5 +1,6 @@
 
 .contact-form {
+    max-width: 43.2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 10rem;
     grid-template-rows: repeat(2, 2.55rem);
@@ -21,6 +22,12 @@
     grid-area: phone;
 }
 
+.contact-form input[type=text],
+.contact-form input[type=tel],
+.contact-form input[type=email]{
+    width: 11.55rem;
+}
+
 .contact-form-submit {
     grid-area: submit;
     border-radius: 2px;
@@ -34,15 +41,26 @@
     justify-content: center;
 }
 
+@media screen and (min-width: 1441px) {
+    .contact-form {
+        margin: 1.5rem auto;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .contact-form {
         margin: 1.5rem 20%;
+    }
+    .contact-form input[type=text],
+    .contact-form input[type=tel],
+    .contact-form input[type=email]{
+        width: 10rem;
     }
 }
 
 @media screen and (max-width: 768px) {
     .contact-form {
-        margin: 1.5rem 15%;
+        margin: 1.5rem 10%;
     }
 }
 
@@ -61,7 +79,9 @@
         color: var(--white-50);
         font-size: 1.2rem;
     }
-    .contact-form input {
+    .contact-form input[type=text],
+    .contact-form input[type=tel],
+    .contact-form input[type=email] {
         background: transparent;
         font-size: 1.3rem;
         width: 100%;
