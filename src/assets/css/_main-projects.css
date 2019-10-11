@@ -14,6 +14,7 @@
             '. . .'
 ;
     padding: 5rem 0 5rem 4.15rem;
+    height: 55rem;
 }
 .projects__header {
     grid-area: header;

@@ -7,7 +7,8 @@
     grid-template-areas:
             'name phone submit'
             'agree agree agree';
-    margin: 1.5rem 20%;
+    margin: 18rem 20% 1.5rem;
+    height: 5.1rem;
 }
 
 .contact-form > * {
@@ -43,13 +44,13 @@
 
 @media screen and (min-width: 1441px) {
     .contact-form {
-        margin: 1.5rem auto;
+        margin: 16rem auto 1.5rem;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .contact-form {
-        margin: 1.5rem 20%;
+        margin: 20rem 20% 1.5rem;
     }
     .contact-form input[type=text],
     .contact-form input[type=tel],
@@ -60,7 +61,7 @@
 
 @media screen and (max-width: 768px) {
     .contact-form {
-        margin: 1.5rem 10%;
+        margin: 1.5rem 10%  ;
     }
 }
 
@@ -73,6 +74,7 @@
         background: var(--black);
         padding: 1.5rem 5%;
         margin: 0;
+        height: auto;
     }
 
     .contact-form label:before {
