@@ -107,7 +107,7 @@
     grid-area: stagemiddle;
     display: flex;
     justify-content: space-between;
-    margin: 0 0.5rem;
+    margin: -2rem 0.5rem;
 }
 
 .projects__slider-handler {
