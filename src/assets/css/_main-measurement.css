@@ -1,0 +1,121 @@
+
+.measurement {
+    display: grid;
+    grid-template-areas: 'steps form' 'steps pig';
+    grid-template-columns: 1fr 25.3rem;
+    grid-template-rows: 1fr 5.6rem;
+    grid-gap: 1.5rem;
+    margin: 5rem 2.5rem 2.5rem 2.5rem;
+}
+
+.measurement__header {
+    display: none;
+}
+
+.measurement__steps {
+    grid-area: steps;
+    background: url("../images/proposals.png") no-repeat top center;
+    background-size: contain;
+    width: 38.95rem;
+    height: 34.6rem;
+    display: block;
+
+}
+
+.measurement__steps li {
+    display: none;
+}
+
+.measurement__request-from {
+    grid-area: form;
+    background: var(--black-three) url("../images/bg-measurement-form.svg") no-repeat top center;
+    background-size: contain;
+    margin-top: 5rem;
+}
+
+.measurement__request-from_header {
+    font-family: FuturaDemiC;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    color: var(--white);
+    margin: 1.25rem 20%;
+}
+
+.measurement__request-from label {
+    margin: 2.25rem;
+}
+
+.measurement__request-from label:before {
+    color: var(--white-50);
+}
+
+.measurement__request-from input[type=text],
+.measurement__request-from input[type=tel],
+.measurement__request-from input[type=email] {
+    background: transparent;
+    width: 100%;
+    border-bottom: 1px solid var(--white-15);
+}
+
+.measurement__request-from input[type=text]::placeholder,
+.measurement__request-from input[type=tel]::placeholder,
+.measurement__request-from input[type=email]::placeholder {
+    color: var(--white);
+}
+
+
+.request-form-agree {
+    margin-top: 1rem;
+    color: var(--white);
+}
+
+.request-form-submit {
+    width: 10.65rem;
+    height: 2.55rem;
+    float: right;
+    margin-bottom: 1.5rem;
+}
+
+.measurement__piggy-bank {
+    grid-area: pig;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*height: */
+    background: var(--white) url("../images/piggy-bank.svg") no-repeat;
+    background-position: left 0.5rem top 0;
+    background-size: 5.6rem;
+    font-family: FuturaDemiC;
+    font-size: 1rem;
+    line-height: 1.12rem;
+    color: var(--sand);
+    height: 5.6rem;
+    padding: 0 7rem 0 6rem;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .measurement__steps {
+        background: url("../images/proposals.png") no-repeat top center;
+        background-size: contain;
+        width: 26rem;
+        height: 34.6rem;
+        display: block;
+
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .measurement {
+        grid-template-areas: 'form' 'pig';
+        grid-template-columns: 1fr;
+    }
+
+    .measurement__steps {
+        display: none;
+    }
+}
