@@ -14,29 +14,6 @@ main {
 
 
 
-.fantasies {
-
-}
-.fantasies__menu {
-
-}
-.fantasies__list-item {
-    font-family: "Proxima Nova";
-    font-size: 1rem;
-    line-height: 34px;
-    color: var(--white);
-}
-.fantasies__list-item_active {
-    font-family: "Proxima Nova";
-    font-size: 1rem;
-    line-height: 34px;
-    color: var(--sand);
-}
-.fantasies__demo {
-
-}
-
-
 
 
 .design-project {
