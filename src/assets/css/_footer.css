@@ -1,9 +1,54 @@
-.footer-wrapper {
-    height: 4.15rem;
+footer {
+    height: 4.25rem;
     background-color: var(--black);
+    white-space: nowrap;
+}
+
+.footer-wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5.7% 12.5% 6.6% 1fr 4.7% 8.8% 3.1% 11.2% 7%;
+    grid-template-rows: 28.9% 1fr 26.5%;
+    grid-template-areas:
+            ' . . . . . . . . . '
+            ' . logo . menu . tel . button . '
+            ' . . . . . . . . . ';
+}
+.footer-wrapper>* {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 82px;
+}
+
+@media screen and (max-width: 840px) {
+
+    .footer-wrapper {
+        grid-template-columns: 5.7% 12.5% 6.6% 1fr 4% auto 4% 11.2% 1%;
+    }
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+    .footer-wrapper {
+        grid-template-columns: 5.7% auto 1% auto 1% auto 1%;
+        grid-template-areas:
+                ' . . . . . . . '
+                ' . logo . tel . button . '
+                ' . . . . . . . ';
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+
+    .footer-wrapper {
+        grid-template-columns: 1% auto 1% auto 1%;
+        grid-template-areas:
+                ' . . . . . '
+                ' . logo . tel .  '
+                ' . . . . . '  ;
+    }
+
 }
