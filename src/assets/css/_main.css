@@ -25,83 +25,6 @@ main {
 
 
 
-.types-of-repair {
-    text-align: center;
-    margin: 0 10%;
-}
-.types-of-repair__header {
-    background: url("../images/tools.svg") no-repeat center bottom;
-    padding-bottom: 35px;
-    margin-bottom: 50px;
-}
-.types-of-repair__list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.types-of-repair__list>li {
-    list-style-type: none;
-    padding: 300px 25px 0;
-    width: 392px;
-    margin: 0 15px;
-}
-.types-list__list-item {
-    text-align: left;
-    list-style-position: inside;
-    background-color: var(--white);
-    padding: 27px;
-    position: relative;
-}
-.types-list__list-item ul li {
-    list-style-type: disc;
-}
-.types-of-repair__list_redecorating {
-    background: url("../images/redecorating.png") no-repeat top center;
-}
-.types-of-repair__list_overhaul {
-    background: url("../images/overhaul.png") no-repeat top center;
-}
-.types-of-repair__list_designer-repair {
-    background: url("../images/designer-repair.png") no-repeat top center;
-}
-
-.types-list__list-item_header {
-    font-family: YesevaOne;
-    font-size: 0.9rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.41;
-    letter-spacing: normal;
-    color: var(--black-two);
-    margin-bottom: 10px;
-}
-
-.types-list__list-item ul li {
-    font-family: FuturaBookC;
-    font-size: 0.75rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.76;
-    letter-spacing: normal;
-    color: var(--warm-grey);
-}
-.types-list__list-item_cost {
-    font-family: YesevaOne;
-    font-size: 0.9rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.41;
-    letter-spacing: normal;
-    color: var(--white);
-    margin-top: 30px;
-}
-
-
-
 
 
 
@@ -161,6 +84,17 @@ main {
     color: #FFFFFF;
     border-bottom: 1px solid var(--white-50);
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .request-form-submit {
     position: absolute;

@@ -1,0 +1,137 @@
+.types-of-repair {
+    text-align: center;
+    margin: 9.9% 10% 0
+}
+.types-of-repair__header {
+    background: url("../images/tools.svg") no-repeat center bottom;
+    padding-bottom: 3rem;
+    margin-bottom: 2.5rem;
+}
+.types-of-repair__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.types-of-repair__list>li {
+    padding: 14.5rem 1.25rem 0;
+    width: 19.6rem;
+    margin: 0 0.75rem;
+}
+.types-list__list-item {
+    text-align: left;
+    list-style-position: inside;
+    background-color: var(--white);
+    padding: 1.35rem 1.35rem 3rem 1.35rem;
+    position: relative;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+.types-list__list-item ul li {
+    list-style-type: disc;
+}
+.types-of-repair__list_redecorating {
+    background: url("../images/repair-redecorating.png") no-repeat top center;
+}
+.types-of-repair__list_overhaul {
+    background: url("../images/repair-overhaul.png") no-repeat top center;
+}
+.types-of-repair__list_designer-repair {
+    background: url("../images/repair-designer.png") no-repeat top center;
+}
+
+.types-list__list-item_header {
+    font-family: YesevaOne;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--black-two);
+    margin-bottom: 10px;
+}
+
+.types-list__list-item ul li {
+    font-family: FuturaBookC;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.76;
+    letter-spacing: normal;
+    color: var(--warm-grey);
+}
+.types-list__list-item_cost {
+    font-family: YesevaOne;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--white);
+    margin-top: -1.35rem;
+    width: 11.4rem;
+    height: 2.7rem;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+
+    position: relative;
+    z-index: 10;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .types-of-repair {
+        text-align: center;
+        margin: 9.9% 1% 0
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .types-of-repair {
+        text-align: center;
+        margin: 15% 10% 0;
+    }
+
+    .types-of-repair__list {
+        flex-direction: column;
+    }
+
+    .types-of-repair__list>li {
+        background-size: contain;
+        padding: 19rem 5.5rem 0 0;
+        margin: 1rem 0;
+        width: 28.3345rem;
+    }
+
+    .types-list__list-item {
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+
+    }
+
+    .types-of-repair__list_redecorating {
+        background: url("../images/repair-redecorating-mobile.png") no-repeat top center;
+    }
+    .types-of-repair__list_overhaul {
+        background: url("../images/repair-overhaul-mobile.png") no-repeat top center;
+    }
+    .types-of-repair__list_designer-repair {
+        background: url("../images/repair-designer-mobile.png") no-repeat top center;
+    }
+    .types-list__list-item_header {
+        font-size: 1.25rem;
+    }
+    .types-list__list-item ul li {
+        font-size: 1.0834rem;
+    }
+
+    .types-list__list-item_cost {
+        height: 3.334rem;
+        width: 15.87rem;
+        font-size: 1.25rem;
+    }
+
+}
+
