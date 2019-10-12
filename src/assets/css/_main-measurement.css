@@ -105,14 +105,14 @@
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1200px) {
     .measurement__steps {
         background: url("../images/proposals.png") no-repeat top center;
         background-size: contain;
         width: 26rem;
         height: 34.6rem;
         display: block;
-
+        margin-top: 5rem;
     }
 }
 
