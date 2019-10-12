@@ -2,7 +2,7 @@
     background: var(--black) url(../images/cover.png) 4.15rem top no-repeat;
     background-size: cover;
 
-    height: 35.35rem;
+    height: 35.25rem;
     display: grid;
     grid-template-columns: 9.9% 15.3% 1.5% 15.3% 17.8% auto;
     grid-template-rows: 27.4% 14.9% 2.7% 12.6% 5.8% 7.2% 29.4%;
@@ -129,5 +129,11 @@
     }
     .cover__description {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cover {
+        background-position-x: 4.1rem;
     }
 }
