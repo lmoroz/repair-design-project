@@ -98,6 +98,13 @@
 }
 
 
+@media screen and (min-width: 1440px) {
+    .measurement {
+        margin: 5rem auto;
+        max-width: 72rem;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     .measurement__steps {
         background: url("../images/proposals.png") no-repeat top center;
@@ -116,6 +123,13 @@
     }
 
     .measurement__steps {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .measurement {
         display: none;
     }
 }
