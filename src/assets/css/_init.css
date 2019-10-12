@@ -82,40 +82,31 @@
         font-size: 75%;
     }
 }
-@media screen and (max-width: 375px) {
-
-}
-
-
 
 @media screen and (min-width: 1440px) {
     html {
         font-size: 125%;
     }
-
-    main {
-        background-position-x: 82px;
-    }
 }
 
-.header-wrapper, .main-wrapper, .footer-wrapper {
-    position: relative;
-}
+/*.header-wrapper, .main-wrapper, .footer-wrapper {*/
+/*    position: relative;*/
+/*}*/
+
+
+
+
+
+
 
 /* ----------------------------------------- DEBUG styles ----------------------------------------------------------- */
 
-
-.fantasies,
 .design-project,
 .steps,
 .team,
 .clients,
 .question-form,
-.contacts,
-footer {
+.contacts
+{
     display: none!important;
-}
-
-body {
-    height: 10150px;
 }
