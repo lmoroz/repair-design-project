@@ -1,6 +1,6 @@
 .design-project {
     text-align: center;
-    margin: 9.9% 10% 0
+    margin: 9.9% 4.5rem 0;
 }
 .design-project__header {
     background: url("../images/design-project.svg") no-repeat center bottom;
@@ -16,12 +16,12 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: stretch;
     list-style-type: none;
 }
 .design-project__list>li {
+    flex: 1;
     padding: 14.5rem 1.25rem 0;
-    width: 19.6rem;
     margin: 0 0.75rem;
 }
 .design-project-list__list-item {
