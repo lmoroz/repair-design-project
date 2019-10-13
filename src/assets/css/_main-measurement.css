@@ -6,6 +6,7 @@
     grid-template-rows: 1fr 5.6rem;
     grid-gap: 1.5rem;
     margin: 5rem 2.5rem 2.5rem 2.5rem;
+    padding-right: 5rem;
 }
 
 .measurement__header {
@@ -105,7 +106,10 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1260px) {
+    .measurement {
+        padding-right: 4rem;
+    }
     .measurement__steps {
         background: url("../images/proposals.png") no-repeat top center;
         background-size: contain;
@@ -120,6 +124,7 @@
     .measurement {
         grid-template-areas: 'form' 'pig';
         grid-template-columns: 1fr;
+        padding: 0;
     }
 
     .measurement__steps {
