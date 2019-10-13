@@ -16,61 +16,6 @@ main {
 
 
 
-
-.steps {
-
-}
-
-.steps {
-    background: var(--black);
-}
-
-.steps__step-content {
-    font-family: FuturaBookC;
-    font-size: 0.75rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.76;
-    letter-spacing: normal;
-    color: var(--white);
-}
-.steps__list-item-tab-text {
-    font-family: FuturaBookC;
-    font-size: 0.75rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.23;
-    letter-spacing: normal;
-    color: var(--white);
-}
-.steps__header-second {
-    font-family: FuturaDemiC;
-    font-size: 0.75rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.41;
-    letter-spacing: normal;
-    color: var(--white);
-}
-
-.steps__step-title {
-    font-family: YesevaOne;
-    font-size: 0.75rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.52;
-    letter-spacing: normal;
-    color: var(--sand);
-}
-
-
-
-
-
 .team__description-top {
     font-family: FuturaBookC;
     font-size: 1rem;
