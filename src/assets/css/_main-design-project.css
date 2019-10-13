@@ -1,0 +1,160 @@
+.design-project {
+    text-align: center;
+    margin: 9.9% 10% 0
+}
+.design-project__header {
+    background: url("../images/design-project.svg") no-repeat center bottom;
+    padding-bottom: 2rem;
+    margin-bottom: 1.5rem;
+}
+.design-project__description {
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+    text-align: center;
+}
+.design-project__list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.design-project__list>li {
+    padding: 14.5rem 1.25rem 0;
+    width: 19.6rem;
+    margin: 0 0.75rem;
+}
+.design-project-list__list-item {
+    text-align: left;
+    list-style-position: inside;
+    background-color: var(--white);
+    padding: 1.35rem 1.35rem 3rem 1.35rem;
+    position: relative;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+.design-project-list__list-item ul li {
+    list-style-type: disc;
+}
+.design-project__list_mini {
+    background: url("../images/design-project-mini.png") no-repeat top center;
+}
+.design-project__list_standart {
+    background: url("../images/design-project-standart.png") no-repeat top center;
+}
+.design-project__list_full {
+    background: url("../images/design-project-full.png") no-repeat top center;
+}
+
+.design-project-list__list-item_header {
+    font-family: YesevaOne;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--black-two);
+    margin-bottom: 10px;
+}
+
+.design-project-list__list-item ul li {
+    font-family: FuturaBookC;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.76;
+    letter-spacing: normal;
+    color: var(--warm-grey);
+}
+.design-project-list__list-item_cost {
+    font-family: YesevaOne;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: var(--white);
+    transform: translateY(-50%);
+    width: 11.4rem;
+    height: 2.7rem;
+    text-align: left;
+    padding-left: 1.35rem;
+
+    justify-content: unset;
+
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+
+    position: relative;
+    z-index: 10;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .design-project {
+        text-align: center;
+        margin: 9.9% 1% 0
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .design-project {
+        background: var(--black);
+        text-align: center;
+        padding: 15% 5% 0;
+        margin: 0;
+    }
+
+    .design-project__header {
+        color: var(--white);
+        font-size: 2rem;
+        padding-bottom: 3rem;
+    }
+    .design-project__description {
+        color: var(--white);
+        font-size: 1.2rem;
+    }
+
+    .design-project__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .design-project__list>li {
+        background-size: contain;
+        padding: 19rem 5.5rem 0 0;
+        margin: 1rem 0;
+        width: 28.3345rem;
+    }
+
+    .design-project-list__list-item {
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+
+    }
+
+    .design-project__list_mini {
+        background: url("../images/design-project-mini-mobile.png") no-repeat top center;
+    }
+    .design-project__list_standart {
+        background: url("../images/design-project-standart-mobile.png") no-repeat top center;
+    }
+    .design-project__list_full {
+        background: url("../images/design-project-full-mobile.png") no-repeat top center;
+    }
+    .design-project-list__list-item_header {
+        font-size: 1.25rem;
+    }
+    .design-project-list__list-item ul li {
+        font-size: 1.0834rem;
+    }
+
+    .design-project-list__list-item_cost {
+        height: 3.334rem;
+        width: 15.87rem;
+        font-size: 1.25rem;
+    }
+
+}
+
