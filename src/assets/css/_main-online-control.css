@@ -10,7 +10,7 @@
     height: 21.7rem;
 }
 .online-control__header {
-    background: url("../images/camera.svg") no-repeat center bottom;
+    background: url("../images/bg-header-online-control.svg") no-repeat center bottom;
     padding-bottom: 35px;
     margin-bottom: 10px;
 }
