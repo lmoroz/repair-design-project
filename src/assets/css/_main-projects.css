@@ -20,6 +20,7 @@
     grid-area: header;
     display: flex;
     text-transform: uppercase;
+    white-space: pre-wrap;
 }
 .projects__header .line {
     display: inline-block;
