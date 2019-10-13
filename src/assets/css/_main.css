@@ -14,56 +14,6 @@ main {
 
 
 
-
-
-.team__description-top {
-    font-family: FuturaBookC;
-    font-size: 1rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.41;
-    letter-spacing: normal;
-    color: var(--white);
-}
-.team__team-member-position {
-    font-family: FuturaBookC;
-    font-size: 0.9rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.52;
-    letter-spacing: normal;
-    color: var(--warm-grey);
-}
-.team__team-member-name {
-    font-family: YesevaOne;
-    font-size: 0.9rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.41;
-    letter-spacing: normal;
-    color: var(--black-three);
-}
-.team__team-member-exp {
-    font-family: YesevaOne;
-    font-size: 0.65rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.52;
-    letter-spacing: normal;
-    color: var(--white);
-}
-
-
-
-
-
-
-
-
 .clients__client-card {
     background: #FFFFFF;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);

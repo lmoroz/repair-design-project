@@ -69,7 +69,6 @@
     .measurement,
     .fantasies__menu,
     .steps,
-    .team__description,
     .clients,
     footer {
         display: none;
@@ -101,7 +100,6 @@
 
 /* ----------------------------------------- DEBUG styles ----------------------------------------------------------- */
 
-.team,
 .clients,
 .question-form,
 .contacts

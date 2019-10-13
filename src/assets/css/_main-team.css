@@ -1,0 +1,202 @@
+.team {
+    margin-top: -25rem;
+    display: grid;
+    grid-template-rows: auto 6rem auto auto;
+    grid-template-columns: 3rem auto 3rem;
+    grid-template-areas: '. header .' '. topdescr .' '. list .' '. bottomdescr .';
+    grid-row-gap: 1rem;
+    justify-items: center;
+}
+
+
+.team__header {
+    grid-area: header;
+    background: url("../images/bg-header-team.svg") no-repeat center bottom;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.team__description-top {
+    grid-area: topdescr;
+    font-family: FuturaBookC;
+    font-size: 1rem;
+    line-height: 1.41;
+    color: var(--white);
+    white-space: pre-wrap;
+    text-align: center;
+}
+
+.team__description-bottom {
+    grid-area: bottomdescr;
+    white-space: pre-wrap;
+    text-align: center;
+
+    margin: 0 19rem;
+    padding-top: 1rem;
+
+    background: transparent url("../images/header-line.svg") center top no-repeat;
+}
+
+.team__team-list {
+    grid-area: list;
+
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+.team__team-list-item {
+    flex: 1;
+    margin: 0 3rem;
+    position: relative;
+}
+
+.team__team-list-item::before {
+    content: '';
+    display: block;
+    transform: translateX(-45%) translateY(-45%);
+    width: 5.5rem;
+    height: 5.5rem;
+    position: absolute;
+}
+
+.team__team-list-item_pm::before {
+    background: transparent url("../images/team-member-icon-pm.svg") center no-repeat;
+    background-size: contain;
+}
+
+.team__team-list-item_designer::before {
+    background: transparent url("../images/team-member-icon-designer.svg") center no-repeat;
+    background-size: contain;
+}
+
+.team__team-list-item_foreman::before {
+    background: transparent url("../images/team-member-icon-foreman.svg") center no-repeat;
+    background-size: contain;
+}
+
+.team_team-member-photo {
+    width: 100%;
+}
+
+.team__team-member-description {
+    position: relative;
+    top: 0;
+    margin: -4.5rem 1rem 0;
+
+    background: var(--white);
+    padding: 1rem 0 0 0;
+    text-align: center;
+}
+
+.team__team-member-name {
+    font-family: YesevaOne;
+    font-size: 0.9rem;
+    line-height: 1.41;
+    color: var(--black-three);
+
+
+    padding: 0 1rem ;
+}
+.team__team-member-position {
+    font-family: FuturaBookC;
+    font-size: 0.9rem;
+    line-height: 1.52;
+    color: var(--warm-grey);
+
+    padding: 0.05rem 1rem 0.7rem 1rem;
+}
+
+
+.team__team-member-exp {
+    font-family: YesevaOne;
+    font-size: 0.65rem;
+    line-height: 1.52;
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 11.15rem;
+    height: 2.2rem;
+
+    margin-top: 0.5rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .team__team-member-description {
+        margin: -4.5rem 1rem 0 1rem;
+    }
+    .team__team-member-name {
+        padding: 0 0.5rem ;
+    }
+    .team__team-member-position {
+        padding: 0.05rem 0.5rem 0.7rem 0.5rem;
+    }
+    .team__team-member-exp {
+        width: 100%;
+    }
+    .team__description-bottom {
+        margin: 0 8rem;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .team__description-bottom {
+        margin: 0 5rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .team {
+        background: var(--black);
+        margin: 0;
+        padding: 5rem 1rem;
+
+        grid-template-rows: 6rem 5rem auto;
+        grid-template-columns: auto;
+        grid-template-areas: 'header' 'topdescr' 'list';
+    }
+    .team__header {
+        font-size: 1.84rem;
+    }
+    .team__team-list {
+        flex-direction: column;
+    }
+    .team__team-list-item::before {
+        width: 8rem;
+        height: 8rem;
+    }
+    .team__team-list-item {
+        margin: 0 0 5rem 0;
+    }
+    .team__description-top {
+        color: var(--white);
+        font-size: 1.3rem;
+    }
+    .team__description-bottom {
+        display: none;
+    }
+
+    .team__team-member-description {
+        margin: -7rem 2rem 0 2rem;
+    }
+    .team__team-member-name {
+        font-size: 1.3rem;
+    }
+    .team__team-member-position {
+        font-size: 1.3rem;
+    }
+
+
+    .team__team-member-exp {
+        font-size: 0.9rem;
+        height: 3.5rem;
+    }
+}
