@@ -98,8 +98,9 @@
     color: var(--black-three);
 
 
-    padding: 0 1rem ;
+    padding: 0 1rem;
 }
+
 .team__team-member-position {
     font-family: FuturaBookC;
     font-size: 0.9rem;
@@ -131,15 +132,19 @@
     .team__team-member-description {
         margin: -4.5rem 1rem 0 1rem;
     }
+
     .team__team-member-name {
-        padding: 0 0.5rem ;
+        padding: 0 0.5rem;
     }
+
     .team__team-member-position {
         padding: 0.05rem 0.5rem 0.7rem 0.5rem;
     }
+
     .team__team-member-exp {
         width: 100%;
     }
+
     .team__description-bottom {
         margin: 0 8rem;
     }
@@ -151,6 +156,9 @@
         margin: 0 5rem;
     }
 
+    .team__team-list-item {
+        margin: 0 1rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -163,23 +171,29 @@
         grid-template-columns: auto;
         grid-template-areas: 'header' 'topdescr' 'list';
     }
+
     .team__header {
         font-size: 1.84rem;
     }
+
     .team__team-list {
         flex-direction: column;
     }
+
     .team__team-list-item::before {
         width: 8rem;
         height: 8rem;
     }
+
     .team__team-list-item {
         margin: 0 0 5rem 0;
     }
+
     .team__description-top {
         color: var(--white);
         font-size: 1.3rem;
     }
+
     .team__description-bottom {
         display: none;
     }
@@ -187,9 +201,11 @@
     .team__team-member-description {
         margin: -7rem 2rem 0 2rem;
     }
+
     .team__team-member-name {
         font-size: 1.3rem;
     }
+
     .team__team-member-position {
         font-size: 1.3rem;
     }
