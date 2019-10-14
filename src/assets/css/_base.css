@@ -172,6 +172,7 @@ input[type=checkbox] {
 input[type=checkbox] + span {
     display: flex;
     position: relative;
+    align-items: center;
 }
 input[type=checkbox] + span::before {
     content: '';
@@ -226,6 +227,9 @@ label:not(.form-agree):before {
 }
 .form-email:before {
     content: 'Email'
+}
+.form-question:before {
+    content: 'Question'
 }
 
 .form-agree {
