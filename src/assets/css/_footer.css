@@ -1,4 +1,4 @@
-footer {
+.footer {
     height: 4.25rem;
     background-color: var(--black);
     white-space: nowrap;
@@ -42,13 +42,8 @@ footer {
 
 
 @media screen and (max-width: 375px) {
-
-    .footer-wrapper {
-        grid-template-columns: 1% auto 1% auto 1%;
-        grid-template-areas:
-                ' . . . . . '
-                ' . logo . tel .  '
-                ' . . . . . '  ;
+    .footer {
+        display: none;
     }
 
 }
