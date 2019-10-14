@@ -5,8 +5,8 @@
 
     border: solid 1px rgba(255, 255, 255, 0.01);
 
-    margin: 0 auto;
-    padding: 2rem 10rem;
+    margin: 0 19.4%;
+    padding: 2rem 14%;
 
     display: grid;
     grid-template-rows: 2rem 3rem 3rem 2.5rem auto;
@@ -49,19 +49,21 @@
     background: transparent;
     width: 100%;
     border-bottom: 1px solid var(--white-15);
-    font-size: 1.3rem;
+    font-size: 0.9rem;
 }
 
 .question-form input[type=text]::placeholder,
 .question-form input[type=tel]::placeholder {
     color: var(--white);
-    font-size: 1.3rem;
+    font-size: 0.9rem;
 }
 .question-form-agree {
     grid-area: agree;
 
     margin-top: 1rem;
     color: var(--white);
+
+    font-size: 0.9rem;
 
 }
 
@@ -76,6 +78,12 @@
 }
 
 
+@media screen and (max-width: 1200px) {
+    .question-form {
+        margin: 0 10%;
+        padding: 2rem 10%;
+    }
+}
 @media screen and (max-width: 960px) {
 
     .question-form {
@@ -98,8 +106,8 @@
 
 @media screen and (max-width: 768px) {
     .question-form {
-        margin-top: -5rem;
-        padding: 2rem 2rem;
+        margin: -5rem 0 0 0;
+        padding: 2rem 10%;
     }
 
     .question-form__header {
@@ -129,5 +137,12 @@
         width: 100%;
         height: 3.5rem;
         margin: 2.5rem 0 0 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .question-form {
+        margin: -5rem 0 0 0;
+        padding: 2rem 5%;
     }
 }
