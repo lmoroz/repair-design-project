@@ -129,9 +129,6 @@ button, a {
     border-radius: 2px;
 }
 
-button.call-to-action {
-    border: none;
-}
 
 label {
     display: block;
@@ -256,6 +253,12 @@ label:not(.form-agree):before {
     color: var(--white);
     text-transform: uppercase;
     text-decoration: none;
+    border: 1px solid var(--sand);
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: var(--white);
+    color: var(--sand);
 }
 
 .list-text {
@@ -270,15 +273,3 @@ label:not(.form-agree):before {
 }
 
 
-
-
-address {
-    font-family: YesevaOne;
-    font-size: 1rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.41;
-    letter-spacing: normal;
-    color: var(--sand);
-}

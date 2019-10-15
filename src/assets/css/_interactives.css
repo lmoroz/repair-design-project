@@ -44,6 +44,7 @@
     transition: transform 1s ease, width 1s ease, height 1s ease, margin-left  1s ease;
     will-change: transform, width, height, margin-left;
 }
+
 .instagram-interactive-wrapper:hover .instagram-interactive__link {
     width: 100%;
     height: 4.15rem;
@@ -66,8 +67,12 @@
     text-transform: uppercase;
     color: var(--white);
     padding: 25px 75px 25px 55px;
+
     background: var(--black) url("../images/scrolldown-button.svg") no-repeat;
     background-position: center right 25px;
+    border: 1px solid var(--black);
+
+
     white-space: nowrap;
 
     position: fixed;
@@ -75,10 +80,11 @@
     top: 0;
     margin-top: calc(4.15rem + 35.35rem);
     transform: translateY(-50%);
-    border: none;
     z-index: 100;
 }
 .scroll-down-interactive:hover {
     color: var(--sand);
+    background-color: var(--black-50);
+    border: 1px solid var(--sand);
 }
 

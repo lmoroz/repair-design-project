@@ -1,5 +1,6 @@
 :root {
     --black-75: rgba(0, 0, 0, 0.75);
+    --black-50: rgba(0, 0, 0, 0.5);
     --black-three-10: rgba(24, 24, 24, 0.1);
     --black-three-80: rgba(24, 24, 24, 0.8);
     --black-three: #181818;
