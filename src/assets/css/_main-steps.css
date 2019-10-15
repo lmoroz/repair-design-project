@@ -97,7 +97,10 @@
 
     margin-bottom: 2.4rem;
     width: 6.5rem;
+
+    text-decoration: none;
 }
+
 .steps__list-item-tab-text::before {
     content: "0"counter(steps-counter);
 
@@ -111,8 +114,14 @@
     margin-bottom: 0.5rem;
     width: 1rem;
 }
+
+.steps__list-item-tab-text:hover,
 .steps__list-item-tab-text-active {
     opacity: 1;
+}
+
+.steps__list-item-tab-text:hover {
+    text-decoration: underline;
 }
 
 
