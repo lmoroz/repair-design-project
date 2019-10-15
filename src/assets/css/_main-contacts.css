@@ -1,0 +1,119 @@
+.contacts {
+    width: 100%;
+    background-color: var(--black-three);
+    background-image: linear-gradient(to top, var(--black-three), var(--black-three-80)), url("../images/bg-contacts.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    margin-top: -12rem;
+    padding: 16rem 0 3rem 0;
+
+    position: relative;
+    z-index: 9;
+
+
+    display: grid;
+    grid-template-rows: 5rem 100px auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+            'address'
+            'social'
+            'map';
+    justify-items: center;
+    align-items: center;
+}
+
+.contacts__header {
+    display: none;
+}
+
+.contacts__address {
+    grid-area: address;
+
+    font-family: YesevaOne;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    color: var(--sand);
+
+    text-align: center;
+    text-transform: uppercase;
+
+    width: 41%;
+}
+.contacts__phone {
+    color: var(--sand);
+    text-decoration: none;
+    white-space: nowrap;
+}
+.contacts__phone:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.contacts-social-links {
+    grid-area: social;
+    font-size: 0;
+    line-height: 0;
+}
+.contacts-social-link {
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    margin: 26px 7.5px 43px;
+}
+.contacts-social-link_mail {
+    background: transparent url("../images/contacts-icon-mail.svg") center no-repeat;
+}
+.contacts-social-link_insta {
+    background: transparent url("../images/contacts-icon-inst.svg") center no-repeat;
+}
+
+.contacts__map {
+    grid-area: map;
+    width: 46.25rem;
+    height: 23.25rem;
+}
+
+
+
+@media screen and (max-width: 960px) {
+
+    .contacts__map {
+        grid-area: map;
+        width: 40rem;
+        height: 20rem;
+    }
+    .contacts__address {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .contacts__map {
+        grid-area: map;
+        width: 30rem;
+        height: 15rem;
+    }
+}
+@media screen and (max-width: 425px) {
+    .contacts {
+        background: var(--black);
+        grid-template-rows: auto 8rem 50px ;
+        grid-template-areas:
+                'map'
+                'address'
+                'social';
+    }
+    .contacts__map {
+        width: 375px;
+        height: 188.5px;
+    }
+    .contacts__address {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+}

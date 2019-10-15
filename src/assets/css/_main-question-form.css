@@ -18,6 +18,9 @@
             'agree agree'
             'submit submit';
     grid-row-gap: 1rem;
+
+    position: relative;
+    z-index: 10;
 }
 
 .question-form__header {
