@@ -66,6 +66,10 @@
     height: 31px;
     margin: 26px 7.5px 43px;
 }
+.contacts-social-link:hover {
+    transform: scale(2);
+}
+
 .contacts-social-link_mail {
     background: transparent url("../images/contacts-icon-mail.svg") center no-repeat;
 }

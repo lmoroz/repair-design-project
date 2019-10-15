@@ -1,5 +1,5 @@
-button, a {
-    transition: background-color 0.1s ease, border-color 0.1s ease, color 0.1s ease, padding 0.1s ease, margin 0.1s ease;
+button, a, input {
+    transition: background-color 0.1s ease, border-color 0.1s ease, color 0.1s ease, padding 0.1s ease, margin 0.1s ease, transform 0.1s ease;
 }
 
 
@@ -135,11 +135,16 @@ label {
     cursor: pointer;
 }
 
+input:-internal-autofill-selected {
+    border-bottom-style: dotted!important;
+}
+
+input:-internal-autofill-selected,
 label input[type=text],
 label input[type=tel],
-label input[type=email]{
+label input[type=email] {
     height: 25px;
-    font-family: FuturaC;
+    font-family: FuturaBookC;
     font-size: 0.9rem;
     font-weight: 500;
     font-stretch: normal;
@@ -149,6 +154,7 @@ label input[type=email]{
     outline: none;
     border: none;
     border-bottom: 1px solid var(--black-three-10);
+    background-color: transparent!important;
 }
 input[type=text]::placeholder,
 input[type=tel]::placeholder,
@@ -162,6 +168,12 @@ input[type=email]::placeholder {
     letter-spacing: normal;
     color: var(--black-two);
 }
+input[type=text]:hover::placeholder,
+input[type=tel]:hover::placeholder,
+input[type=email]:hover::placeholder {
+    color: var(--black-two-25);
+}
+
 
 input[type=checkbox] {
     display: none;

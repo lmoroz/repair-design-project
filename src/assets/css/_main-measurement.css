@@ -60,12 +60,18 @@
     background: transparent;
     width: 100%;
     border-bottom: 1px solid var(--white-15);
+    color: var(--white);
 }
 
 .measurement__request-from input[type=text]::placeholder,
 .measurement__request-from input[type=tel]::placeholder,
 .measurement__request-from input[type=email]::placeholder {
     color: var(--white);
+}
+.measurement__request-from input[type=text]:hover::placeholder,
+.measurement__request-from input[type=tel]:hover::placeholder,
+.measurement__request-from input[type=email]:hover::placeholder {
+    color: var(--white-30);
 }
 
 

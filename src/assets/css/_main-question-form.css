@@ -53,6 +53,7 @@
     width: 100%;
     border-bottom: 1px solid var(--white-15);
     font-size: 0.9rem;
+    color: var(--white);
 }
 
 .question-form input[type=text]::placeholder,
@@ -60,6 +61,11 @@
     color: var(--white);
     font-size: 0.9rem;
 }
+.question-form input[type=text]:hover::placeholder,
+.question-form input[type=tel]:hover::placeholder {
+    color: var(--white-30);
+}
+
 .question-form-agree {
     grid-area: agree;
 
@@ -120,18 +126,17 @@
         align-self: end;
     }
     .question-form input[type=text],
-    .question-form input[type=tel],
-    .question-form input[type=email] {
+    .question-form input[type=tel] {
         border-bottom: 1px solid var(--white-50);
         font-size: 1.2rem;
     }
 
     .question-form input[type=text]::placeholder,
-    .question-form input[type=tel]::placeholder,
-    .question-form input[type=email]::placeholder {
+    .question-form input[type=tel]::placeholder {
         color: var(--white);
         font-size: 1.2rem;
     }
+
     .question-form-agree {
         font-size: 1.2rem;
     }
