@@ -2,9 +2,8 @@
 .instagram-interactive-wrapper {
     height: 35.35rem;
     width: 4.15rem;
-    background: transparent url("../images/bg-instagram.svg") no-repeat;
     background-size: 0;
-    background-position: center top 30px;
+    background: transparent url("../images/bg-instagram.svg") no-repeat center top 30px;
     transition: width 1s ease, height 1s ease, margin-left  1s ease, background-size 5s ease, background-color 0.5s ease;
     will-change: width, height, margin-left, background-size, background-color;
     cursor: pointer;

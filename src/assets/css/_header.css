@@ -78,7 +78,7 @@ header {
     grid-area: tel;
     border-radius: 2px;
     text-decoration: underline;
-    /*margin: 0 -1rem;*/
+
 }
 .header__tel-link:hover {
     background-color: var(--sand);
